@@ -43,8 +43,8 @@ namespace ExoticRose
                     var position = await locator.GetPositionAsync(TimeSpan.FromSeconds(10));
                    
                     Device.BeginInvokeOnMainThread(() => {
-                        latitude.Text = $"Latitude : {position.Latitude}";
-                        longitude.Text = $"Longitude : {position.Longitude}";
+                        latitude.Text = $"Latitud : {position.Latitude}";
+                        longitude.Text = $"Longitud : {position.Longitude}";
                         
                     });
                     Localizar(position.Latitude, position.Longitude, "Ubicacion Actual");
