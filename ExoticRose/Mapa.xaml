@@ -15,6 +15,10 @@
             </Grid>
         <Maps:Map WidthRequest="320" HeightRequest="200" x:Name="MyMap" MapType="Street"/>
         <Button x:Name="Ubicar" Text="Ubicacion" Clicked="Ubicar_Clicked"/>
+
+        <Label Text="" x:Name="latitude" TextColor="Black"/>
+        <Label Text="" x:Name="longitude" TextColor="Black"/>
+       
     </StackLayout>
 </ContentPage>
 
