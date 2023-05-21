@@ -11,7 +11,7 @@
                 <DatePicker x:Name="dtFecha" TextColor="White" HorizontalOptions="End" IsEnabled="False" FontSize="16" />
             </Grid>
             <Picker x:Name="pkInvernadero" Title="Seleccione un Invernadero" TitleColor="Gray" SelectedIndexChanged="pkInvernadero_SelectedIndexChanged" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White" VerticalTextAlignment="Center"/>
-            <ListView x:Name="Variedades">
+            <ListView x:Name="lstVariedades">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout>
@@ -24,7 +24,7 @@
                                     <ColumnDefinition/>
                                     <ColumnDefinition/>
                                 </Grid.ColumnDefinitions>
-                                <Label x:Name="lblID" Text="1" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" TextColor="Black"/>
+                                <Label x:Name="lblID" Text="{Binding nombre}" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" TextColor="Black"/>
                                 <Entry x:Name="txtCantidad" Placeholder="Cantidad" TextColor="Black"/>
                                 <Entry x:Name="txtObservacion" Placeholder="Observación" TextColor="Black"/>
                             </Grid>
