@@ -10,7 +10,9 @@ namespace ExoticRose
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Login());
+            //MainPage = new NavigationPage(new Login());
+            //MainPage = new NavigationPage(new Mapa());
+            MainPage = new NavigationPage(new Camara());
         }
 
         protected override void OnStart()

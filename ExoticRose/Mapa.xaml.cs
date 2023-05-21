@@ -17,7 +17,7 @@ namespace ExoticRose
             Localizar(-12.0271214, -77.152989, "Lima");
         }
 
-        private async void Localizar(double latitud, double longitud, string ubicacion)
+        private void Localizar(double latitud, double longitud, string ubicacion)
         {
             Pin pin = new Pin()
             {
@@ -29,7 +29,6 @@ namespace ExoticRose
             MyMap.MoveToRegion(MapSpan.FromCenterAndRadius(pin.Position, Distance.FromMeters(300)));
 
         }
-
 
         private async void Ubicar_Clicked(System.Object sender, System.EventArgs e)
         {
@@ -51,16 +50,13 @@ namespace ExoticRose
                 }
                 else
                 {
-                    await DisplayAlert("Message", "GPS Not Enabled", "Ok");
+                    await DisplayAlert("Mensaje", "GPS No Activado", "Ok");
                 }
             }
             else
             {
-                await DisplayAlert("Message", "GPS Not Available", "Ok");
+                await DisplayAlert("Mensaje", "GPS No Disponible", "Ok");
             }
-
-           
-
         }
     }
 }

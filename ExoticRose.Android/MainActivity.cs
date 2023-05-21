@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.OS;
 using Android;
 using Plugin.CurrentActivity;
+using Plugin.Media;
 
 namespace ExoticRose.Droid
 {
@@ -25,6 +26,7 @@ namespace ExoticRose.Droid
         {
             base.OnCreate(savedInstanceState);
 
+            CrossMedia.Current.Initialize();
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             CrossCurrentActivity.Current.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
