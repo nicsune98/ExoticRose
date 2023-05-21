@@ -23,6 +23,7 @@ namespace ExoticRose
 
         void Ubicar_Clicked(System.Object sender, System.EventArgs e)
         {
+
         }
     }
 }
