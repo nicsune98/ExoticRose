@@ -361,3 +361,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/ExoticRose/WS/Usuarios.cs
+/ExoticRose/ExoticRose.csproj
+/ExoticRose/Login.xaml.cs
+/ExoticRose.Android/Resources/Resource.designer.cs
+/.gitignore
