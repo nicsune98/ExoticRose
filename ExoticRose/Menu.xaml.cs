@@ -24,7 +24,7 @@ namespace ExoticRose
 
         private void btMapa_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new Mapa());
         }
 
         private void btProceso_Clicked(object sender, EventArgs e)

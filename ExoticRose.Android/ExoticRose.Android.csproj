@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v13.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -89,7 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ExoticRose\ExoticRose.csproj">
-      <Project>{B792D9F2-D1E4-4AD5-859C-50ABDE81685F}</Project>
+      <Project>{1DB8A5EF-E315-4DA5-924D-CCF4A47D7E13}</Project>
       <Name>ExoticRose</Name>
     </ProjectReference>
   </ItemGroup>
