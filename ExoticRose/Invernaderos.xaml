@@ -7,11 +7,32 @@
     <ContentPage.Content>
         <StackLayout>
             <Grid BackgroundColor="#005398" HeightRequest="50" Padding="10">
-                <Label Text="Recolección" VerticalOptions="Center" TextColor="White" FontSize="16" VerticalTextAlignment="Start"/>
-                <Button x:Name="btRegistrar" Text="+" TextColor="White" HorizontalOptions="End" VerticalOptions="Start" BackgroundColor="#005398" FontSize="20" BorderRadius="100"/>
+                <Label x:Name="lblprue" Text="Recolección" VerticalOptions="Center" TextColor="White" FontSize="16" VerticalTextAlignment="Start"/>
+                <DatePicker x:Name="dtFecha" TextColor="White" HorizontalOptions="End" IsEnabled="False" FontSize="16" />
             </Grid>
-            <Label Text="Selecciona un Invernadero" TextColor="Black" HorizontalOptions="Center" FontSize="16" Margin="0,10,0,-5"/>
-            <Picker x:Name="pkInvernadero" SelectedIndexChanged="pkInvernadero_SelectedIndexChanged" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="#005398"/>
+            <Picker x:Name="pkInvernadero" Title="Seleccione un Invernadero" TitleColor="Gray" SelectedIndexChanged="pkInvernadero_SelectedIndexChanged" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White" VerticalTextAlignment="Center"/>
+            <ListView x:Name="Variedades">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Grid BackgroundColor="Black">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Label x:Name="lblID" Text="1" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" TextColor="Black"/>
+                                <Entry x:Name="txtCantidad" Placeholder="Cantidad" TextColor="Black"/>
+                                <Entry x:Name="txtObservacion" Placeholder="Observación" TextColor="Black"/>
+                            </Grid>
+                        </StackLayout>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

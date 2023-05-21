@@ -12,9 +12,10 @@ namespace ExoticRose
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Menu : ContentPage
 	{
-		public Menu ()
+		public Menu (string nombre)
 		{
 			InitializeComponent ();
+            lblUsuario.Text = nombre;
 		}
 
         private void btInvernadero_Clicked(object sender, EventArgs e)

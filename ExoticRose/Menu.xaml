@@ -7,7 +7,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Grid BackgroundColor="#005398" HeightRequest="50" Padding="10" ColumnSpacing="0" ColumnDefinitions="*,*,*,*">
-                <Label Text="Pedrito 1" HorizontalOptions="StartAndExpand" TextColor="White" FontSize="20" VerticalOptions="Center" Grid.Column="0"/>
+                <Label x:Name="lblUsuario" Text="User" HorizontalOptions="StartAndExpand" TextColor="White" FontSize="20" VerticalOptions="Center" Grid.Column="0"/>
                 <Image Source="Cabecera.png" Grid.Column="3" HorizontalOptions="EndAndExpand"/>
             </Grid>
             <Button x:Name="btInvernadero" Text="Invernaderos" BackgroundColor="White" TextColor="Black" HeightRequest="100" Clicked="btInvernadero_Clicked"/>
